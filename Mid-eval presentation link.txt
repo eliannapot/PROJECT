@@ -1,0 +1,5 @@
+Presentation:
+https://docs.google.com/presentation/d/1jdm3yGazgtBpu1Nc9BL3GQ_9YaqMr_z1TaHBxhdBrCs/edit?usp=sharing
+
+Git repository:
+https://github.com/eliannapot/website
