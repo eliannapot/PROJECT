@@ -146,7 +146,7 @@
 
 /*-----NAV Buttons------*/
   .nav-button {
-    padding: 2;
+    padding: 2;  /*So that there's a bit of a distance between them!*/ 
     margin-top: 7px;
     background-color:  #f8f9fa;
     color: rgb(135, 135, 135);
