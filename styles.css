@@ -38,13 +38,22 @@
   /*Second Div*/
   .home-second-div {
     padding: 3%;
-    margin: 5%;
+    margin: 2%;
   }
+
   /*Third Div*/
   .home-third-div {
     background-color: var(--firstcolor);
     padding: 3%;
-    margin: 0%;
+    margin: 2%;
+  }
+
+  /*Fourth Div*/
+  .map-container {
+    background-color: gray; /*Map Placeholder*/
+    height: 300px;
+    padding: 3%;
+    margin: 2%;
   }
 
 
