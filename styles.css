@@ -30,3 +30,33 @@
     height: 500px;
   }
 
+  .nav-button {
+    padding: 0;
+    margin-top: 7px;
+    background-color:  #f8f9fa;
+    color: rgb(135, 135, 135);
+    border: none;
+  }
+
+.modal-body li{
+  margin: 10px 0px 5px 0px;
+  list-style: none;
+  }
+
+.modal-body input{
+  border: 1px solid #7d7d7d;
+}
+
+.modal-body button{
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 9px;
+}
+
+.modal-footer button{
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 9px;
+}
