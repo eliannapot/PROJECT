@@ -1,16 +1,65 @@
 /*Variables*/
+
 :root {
 
-  --hue: 200;
-  --firstcolor: hsl(var(--hue), 91%, 54%);
-  --secondcolor: hsl(var(--hue), 91%, 45%);
-  --darkcolor: hsl(var(--hue), 3%, 40%);
-/* 
+  --hue: 220;
+  --firstcolor: hsl(var(--hue), 72%, 54%);
+  --secondcolor: hsl(var(--hue), 72%, 45%);
+
+  /* 
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
-*/
+  --text-color-light: hsl(var(--hue), 4%, 55%);*/
 }
+
+
+
+/*=============== VARIABLES CSS ===============*/
+/* :root {
+
+  /*Color mode HSL(hue, saturation, lightness)*/
+/*   --hue: 200;
+ */
+/*
+
+  hsl(220, 72%, 43%);
+
+*//* 
+
+  --firstcolor: hsl(var(--hue), 82%, 53%);   
+  --first-color-alt: hsl(var(--hue), 93%, 57%);   
+  --first-color-light: hsl(var(--hue), 24%, 66%);
+  --first-color-lighten: hsl(var(--hue), 20%, 70%); 
+} */  
+
+
+.body { 
+  --hue: 220;
+  --firstcolor: hsl(var(--hue), 72%, 54%);
+  --secondcolor: hsl(var(--hue), 72%, 45%);
+}
+
+/* body{
+  /*margin: var(--header-height) 0 0 0;*
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; /*For animation dark mode*
+} */
+
+/*
+.body-dark-theme {
+  --hue: 200;
+  --firstcolor: hsl(var(--hue), 91%, 34%);
+  --secondcolor: hsl(var(--hue), 91%, 20%);
+}*/
+
+/* body.dark-theme{
+  --first-color-dark: hsl(var(--hue), 8%, 20%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 75%);
+  --body-color: hsl(var(--hue), 8%, 12%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+} */
 
 /*-------------Footer----------------*/
 .footer-class {
@@ -63,6 +112,7 @@
     background-color: var(--firstcolor);
     padding: 3%;
     margin: 2%;
+    border-radius: 15px;
   }
 
   .home-third-div-item {
@@ -94,9 +144,9 @@
   margin-top: 5rem;
 }
 
-
+/*-----NAV Buttons------*/
   .nav-button {
-    padding: 0;
+    padding: 2;
     margin-top: 7px;
     background-color:  #f8f9fa;
     color: rgb(135, 135, 135);
