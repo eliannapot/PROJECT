@@ -1,7 +1,7 @@
 /*Variables*/
 :root {
 
-  --hue: 20;
+  --hue: 200;
   --firstcolor: hsl(var(--hue), 91%, 54%);
   --secondcolor: hsl(var(--hue), 91%, 45%);
   --darkcolor: hsl(var(--hue), 3%, 40%);
@@ -113,14 +113,14 @@
 }
 
 .modal-body button{
-  background-color: tomato;
+  background-color: var(--firstcolor);
   color: white;
   border: none;
   border-radius: 9px;
 }
 
 .modal-footer button{
-  background-color: tomato;
+  background-color: var(--secondcolor);
   color: white;
   border: none;
   border-radius: 9px;
