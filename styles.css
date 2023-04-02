@@ -22,7 +22,11 @@
     }
   }
 
-  .container {
+  .home-third-div {
+    background-color: tomato;
+  }
+
+  .home-first-container {
     height: 500px;
   }
-  
+
