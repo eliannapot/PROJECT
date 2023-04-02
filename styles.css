@@ -1,7 +1,21 @@
 /*Variables*/
 :root {
-  --firstcolor : lightblue;
 
+  --hue: 280;
+  --firstcolor: hsl(var(--hue), 91%, 54%);
+  --secondcolor: hsl(var(--hue), 91%, 45%);
+  --title-color: hsl(var(--hue), 4%, 100%);
+  --text-color: hsl(var(--hue), 4%, 85%);
+  --text-color-light: hsl(var(--hue), 4%, 55%);
+}
+
+/*-------------Footer----------------*/
+.footer-class {
+  background-color: var(--firstcolor);
+}
+
+.copyright-class {
+  background-color: var(--secondcolor);
 }
 
 /*-------Home---------*/
@@ -48,6 +62,11 @@
     margin: 2%;
   }
 
+  .home-third-div-item {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
   /*Fourth Div*/
   .map-container {
     background-color: gray; /*Map Placeholder*/
@@ -55,6 +74,7 @@
     padding: 3%;
     margin: 2%;
   }
+
 
 
 
