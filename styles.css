@@ -4,6 +4,7 @@
   --hue: 20;
   --firstcolor: hsl(var(--hue), 91%, 54%);
   --secondcolor: hsl(var(--hue), 91%, 45%);
+  --darkcolor: hsl(var(--hue), 3%, 40%);
 /* 
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
@@ -77,6 +78,20 @@
     margin: 2%;
   }
 
+/*-------------Services-----------------*/
 
+.sub-card {
+  color: white;
+  
+}
+
+.sub-card-price {
+  background-color: var(--darkcolor);
+  text-align: end;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid rgba(0,0,0,.125);
+  border-radius: 15px;
+  margin-top: 5rem;
+}
 
 
