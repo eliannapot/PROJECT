@@ -18,7 +18,7 @@
   <body>
 
     <!---Navigation Bar--->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#">GymSpot</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -66,6 +66,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <h3 class="display-5">About the Gym:</h3>
           <p class="my-auto text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
         <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
@@ -77,25 +78,32 @@
     
     <!--Third Div- -->
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
             <a href="your-link-url">
-            <img src="images/programs-home-page.png" alt="Programs Home Image" class="img-fluid">
+            <img src="images/programs-home-page.png" alt="Programs Home Image" class="img-fluid mx-auto d-block">
             <p class="text-center">Check out our Programs!</p>
             </a>
           </div>
           <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
             <a href="your-link-url">
-            <img src="images/services-home-page.png" alt="Services Home Image" class="img-fluid">
+            <img src="images/services-home-page.png" alt="Services Home Image" class="img-fluid mx-auto d-block">
             <p class="text-center">Gym Services.</p>
             </a>
           </div>
         </div>
       </div>
     
-      
+    <!---Fourth Div: Map --->
+    <div class="container">
+      <div id="map"></div>
+    </div>
+    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="project.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
