@@ -169,9 +169,16 @@
   border-radius: 9px;
 }
 
+.modal-body h2{
+  padding: 0;
+}
 .modal-footer button{
   background-color: var(--secondcolor);
   color: white;
   border: none;
   border-radius: 9px;
+}
+
+.sign_in{
+  margin-top: 15px;
 }
