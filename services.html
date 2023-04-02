@@ -16,8 +16,7 @@
 
   </head>
 
-
-   <body>
+  <body>
 
      <!---Navigation Bar--->
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,8 +54,67 @@
           </ul>
         </div>
       </nav>
-
-      <h1>Here we will list our Services</h1>
+      
+      <!--Packages--->
+      <div class="container p-3">
+        <h3>Take a look at our offered packages:</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6 d-flex flex-column align-items-center justify-content-center home-third-div-item">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/local-sub-smaller.jpg" alt="Card image cap">
+              <div class="card-img-overlay sub-card">
+                <h5 class="card-title">Local</h5>
+                <p class="card-text">With the <b>Local</b> subsription you will have the opportunity to visit a Set GymSpot in your area.</p>
+                <a href="#" class="btn btn-primary">Sign up</a>
+                <div class="sub-card-price">
+                  XX $ / month
+                </div>
+              </div>
+              <div class="card-footer">
+                <form>
+                <div class="form-group">
+                  <label for="localpackageselect">Select Package:</label>
+                  <select class="form-control" id="localpackageselect">
+                    <option>1 month</option>
+                    <option>3 months</option>
+                    <option>6 months</option>
+                    <option>12 months</option>
+                    <option>18 months</option>
+                  </select>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex flex-column align-items-center justify-content-center home-third-div-item">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/global-sub-smaller.jpg" alt="Card image cap">
+              <div class="card-img-overlay sub-card">
+                <h5 class="card-title">Global</h5>
+                <p class="card-text">With the <b>Global</b> subscription you will have the opportunity to visit any Gym that is part of the GymSpot chain!</p>
+                <a href="#" class="btn btn-primary">Sign up</a>
+                <div class="sub-card-price">
+                  XX $ / month
+                </div>
+              </div>
+              <div class="card-footer">
+                <form>
+                <div class="form-group">
+                  <label for="globalpackageselect">Select Package:</label>
+                  <select class="form-control" id="globalpackageselect">
+                    <option>1 month</option>
+                    <option>3 months</option>
+                    <option>6 months</option>
+                    <option>12 months</option>
+                    <option>18 months</option>
+                  </select>
+                </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
       
         <!--Log In Modal -->
     <div class="modal fade" id="sign_up_modal" tabindex="-1" role="dialog" aria-labelledby="sign_up_modal_Title" aria-hidden="true">
