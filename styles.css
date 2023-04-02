@@ -1,12 +1,14 @@
 /*Variables*/
 :root {
 
-  --hue: 280;
+  --hue: 20;
   --firstcolor: hsl(var(--hue), 91%, 54%);
   --secondcolor: hsl(var(--hue), 91%, 45%);
+/* 
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
+*/
 }
 
 /*-------------Footer----------------*/
