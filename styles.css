@@ -1,16 +1,65 @@
 /*Variables*/
+
 :root {
 
-  --hue: 200;
-  --firstcolor: hsl(var(--hue), 91%, 54%);
-  --secondcolor: hsl(var(--hue), 91%, 45%);
-  --darkcolor: hsl(var(--hue), 3%, 40%);
-/* 
+  --hue: 220;
+  --firstcolor: hsl(var(--hue), 72%, 54%);
+  --secondcolor: hsl(var(--hue), 72%, 45%);
+
+  /* 
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
-  --text-color-light: hsl(var(--hue), 4%, 55%);
-*/
+  --text-color-light: hsl(var(--hue), 4%, 55%);*/
 }
+
+
+
+/*=============== VARIABLES CSS ===============*/
+/* :root {
+
+  /*Color mode HSL(hue, saturation, lightness)*/
+/*   --hue: 200;
+ */
+/*
+
+  hsl(220, 72%, 43%);
+
+*//* 
+
+  --firstcolor: hsl(var(--hue), 82%, 53%);   
+  --first-color-alt: hsl(var(--hue), 93%, 57%);   
+  --first-color-light: hsl(var(--hue), 24%, 66%);
+  --first-color-lighten: hsl(var(--hue), 20%, 70%); 
+} */  
+
+
+.body { 
+  --hue: 220;
+  --firstcolor: hsl(var(--hue), 72%, 54%);
+  --secondcolor: hsl(var(--hue), 72%, 45%);
+}
+
+/* body{
+  /*margin: var(--header-height) 0 0 0;*
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; /*For animation dark mode*
+} */
+
+/*
+.body-dark-theme {
+  --hue: 200;
+  --firstcolor: hsl(var(--hue), 91%, 34%);
+  --secondcolor: hsl(var(--hue), 91%, 20%);
+}*/
+
+/* body.dark-theme{
+  --first-color-dark: hsl(var(--hue), 8%, 20%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 75%);
+  --body-color: hsl(var(--hue), 8%, 12%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+} */
 
 /*-------------Footer----------------*/
 .footer-class {
@@ -63,6 +112,7 @@
     background-color: var(--firstcolor);
     padding: 3%;
     margin: 2%;
+    border-radius: 15px;
   }
 
   .home-third-div-item {
@@ -94,9 +144,118 @@
   margin-top: 5rem;
 }
 
-/*-- Sign In modal--*/
-.nav-button {
-    padding: 0;
+.other-services {
+  margin: 3rem;
+}
+
+.other-service-card {
+  border-radius: 25px;
+  position: relative;
+}
+
+.other-service-item {
+  padding: 3rem;
+}
+
+.other-service-text {
+  position: absolute;
+  bottom: 10px;
+}
+
+.other-service-btn {
+  margin-top: 1rem;
+}
+
+/*------------- Programs ----------------*/
+
+div.wrap-hover {
+      position: relative;
+      margin: 2em auto;
+      width: 13.5em;
+      height: 20.5em;
+  /*    max-width: 150px;*/
+  /*    height: 140px;*/
+      overflow: hidden;
+      transition: -webkit-transform 1s ease-in;
+  }
+  
+  div.wrap-hover div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      padding: 1em .25em;
+      display: table;
+      box-sizing: border-box; /*/ or content-box*/
+      -moz-box-sizing: border-box; /*/ or content-box*/
+      -webkit-box-sizing: border-box; /*/ or content-box*/
+  }
+  
+  div.wrap-hover .side-a {
+  font-size:10px;
+      border: 0.25em solid #294369;
+      background-color: #FFFFFF;
+      z-index: 5;
+      width: 13.5em;
+      height: 16.5em;
+      max-width: 13.5em;
+      overflow: hidden;
+      -webkit-transition: -webkit-transform 0.4s;
+      -moz-transition: -moz-transform 0.4s;
+      transition: transform 0.4s;
+  }
+  
+  div.wrap-hover div h3,
+  div.wrap-hover div h4 {
+      font-size:12px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      box-sizing: border-box; /* or content-box*/
+      -moz-box-sizing: border-box; /*/ or content-box*/
+      -webkit-box-sizing: border-box; /*/ or content-box*/
+  }
+  
+  div.wrap-hover .side-b {
+      border: .25em solid var(--firstcolor);
+      background-color: var(--secondcolor);
+      color: #FFFFFF;
+      z-index: 6;
+      width: 13.5em;
+      height: 32.5em;
+      max-width: 13.5em;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+      -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+      transition: transform 0.4s, opacity 0.4s;
+  }
+  
+  
+  div.wrap-hover:hover .side-a {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+  }
+  div.wrap-hover:hover .side-b {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+  }
+
+
+/*-----NAV Buttons------*/
+  .nav-button {
+    padding: 2;  /*So that there's a bit of a distance between them!*/ 
     margin-top: 7px;
     background-color:  #f8f9fa;
     color: rgb(135, 135, 135);
