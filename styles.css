@@ -166,6 +166,93 @@
   margin-top: 1rem;
 }
 
+/*------------- Programs ----------------*/
+
+div.wrap-hover {
+      position: relative;
+      margin: 2em auto;
+      width: 13.5em;
+      height: 20.5em;
+  /*    max-width: 150px;*/
+  /*    height: 140px;*/
+      overflow: hidden;
+      transition: -webkit-transform 1s ease-in;
+  }
+  
+  div.wrap-hover div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      padding: 1em .25em;
+      display: table;
+      box-sizing: border-box; /*/ or content-box*/
+      -moz-box-sizing: border-box; /*/ or content-box*/
+      -webkit-box-sizing: border-box; /*/ or content-box*/
+  }
+  
+  div.wrap-hover .side-a {
+  font-size:10px;
+      border: 0.25em solid #294369;
+      background-color: #FFFFFF;
+      z-index: 5;
+      width: 13.5em;
+      height: 16.5em;
+      max-width: 13.5em;
+      overflow: hidden;
+      -webkit-transition: -webkit-transform 0.4s;
+      -moz-transition: -moz-transform 0.4s;
+      transition: transform 0.4s;
+  }
+  
+  div.wrap-hover div h3,
+  div.wrap-hover div h4 {
+      font-size:12px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      box-sizing: border-box; /* or content-box*/
+      -moz-box-sizing: border-box; /*/ or content-box*/
+      -webkit-box-sizing: border-box; /*/ or content-box*/
+  }
+  
+  div.wrap-hover .side-b {
+      border: .25em solid var(--firstcolor);
+      background-color: var(--secondcolor);
+      color: #FFFFFF;
+      z-index: 6;
+      width: 13.5em;
+      height: 32.5em;
+      max-width: 13.5em;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+      -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+      transition: transform 0.4s, opacity 0.4s;
+  }
+  
+  
+  div.wrap-hover:hover .side-a {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+  }
+  div.wrap-hover:hover .side-b {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+  }
+
+
 /*-----NAV Buttons------*/
   .nav-button {
     padding: 2;  /*So that there's a bit of a distance between them!*/ 
