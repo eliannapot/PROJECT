@@ -144,6 +144,28 @@
   margin-top: 5rem;
 }
 
+.other-services {
+  margin: 3rem;
+}
+
+.other-service-card {
+  border-radius: 25px;
+  position: relative;
+}
+
+.other-service-item {
+  padding: 3rem;
+}
+
+.other-service-text {
+  position: absolute;
+  bottom: 10px;
+}
+
+.other-service-btn {
+  margin-top: 1rem;
+}
+
 /*-----NAV Buttons------*/
   .nav-button {
     padding: 2;  /*So that there's a bit of a distance between them!*/ 
