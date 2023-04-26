@@ -120,6 +120,17 @@
     margin-bottom: 1%;
   }
 
+  .form-group {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .home-third-div-photo {
+    border-radius: 20px;
+  }
   /*Fourth Div*/
   .map-container {
     background-color: gray; /*Map Placeholder*/
@@ -204,9 +215,9 @@ div.wrap-hover {
       transition: transform 0.4s;
   }
   
-  div.wrap-hover div h3,
+  div.wrap-hover div h2,
   div.wrap-hover div h4 {
-      font-size:12px;
+      font-size: 1rem;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
@@ -221,7 +232,7 @@ div.wrap-hover {
       color: #FFFFFF;
       z-index: 6;
       width: 13.5em;
-      height: 32.5em;
+      height: 25.5em;
       max-width: 13.5em;
       overflow: hidden;
       opacity: 0;
