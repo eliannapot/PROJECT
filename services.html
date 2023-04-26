@@ -59,27 +59,28 @@
               <div class="card-img-overlay sub-card">
                 <h5 class="card-title">Local</h5>
                 <p class="card-text">With the <b>Local</b> subsription you will have the opportunity to visit a Set GymSpot in your area.</p>
-                <a href="#" class="btn btn-primary">Sign up</a>
-                <div class="sub-card-price">
-                  XX $ / month
+                <div id="localPurchase">
+                  <button data-toggle="modal" data-target="#sign_up_modal" id="signUpLocal" class="btn btn-primary">Sign up</button>
+                </div>
+                <div id= "localPrice" class="sub-card-price">
+                XX $ / month
                 </div>
               </div>
             </div>
                 <form>
                 <div class="form-group">
-                  <label for="localpackageselect">Select Package:</label>
-                  <select class="form-control" id="localpackageselect">
+                  <label for="localPackageSelect">Select Package:</label>
+                  <select class="form-control" id="localPackageSelect">
                     <option>1 month</option>
                     <option>3 months</option>
                     <option>6 months</option>
                     <option>12 months</option>
-                    <option>18 months</option>
                   </select>
                 </div>
                 </form>
                 <form>
                   <div class="form-group">
-                    <label for="localpackageselect">Select City:</label>
+                    <label for="localPackageSelect">Select City:</label>
                     <select class="form-control" id="localcityselect">
                       <option>Athens</option>
                       <option>Chania</option>
@@ -97,8 +98,10 @@
               <div class="card-img-overlay sub-card">
                 <h5 class="card-title">Global</h5>
                 <p class="card-text">With the <b>Global</b> subscription you will have the opportunity to visit any Gym that is part of the GymSpot franchise!</p>
-                <a href="#" class="btn btn-primary">Sign up</a>
-                <div id='global-price' class="sub-card-price">
+                <div id="globalPurchase">
+                  <button data-toggle="modal" data-target="#sign_up_modal" id="signUpGlobal" class="btn btn-primary">Sign up</button>
+                </div>
+                <div id="globalPrice" class="sub-card-price">
                   XX $ / month
                 </div>
               </div>
@@ -111,7 +114,6 @@
                     <option>3 months</option>
                     <option>6 months</option>
                     <option>12 months</option>
-                    <option>18 months</option>
                   </select>
             </div>
                 </form>
@@ -131,11 +133,11 @@
               <div class="card-img-overlay sub-card other-service-card">
                 <div class="other-service-text">
                   <h5 class="card-title">Personal Trainer</h5>
-                  <h6><i>XX $</i></h6> 
+                  <h6><i>20$ per session</i></h6> 
                 </div>
               </div>
             </div>  
-            <a href="#" class="btn btn-primary other-service-btn">Purchase</a>  
+            <button class="btn btn-primary other-service-btn" data-toggle="modal" data-target="#purchase_modal">Purchase</button> 
           </div>
 
           <div class="col-md-4 d-flex flex-column align-items-center justify-content-center other-service-item">
@@ -144,11 +146,11 @@
               <div class="card-img-overlay sub-card other-service-card">
                 <div class="other-service-text">
                   <h5 class="card-title">Pool</h5>
-                  <h6 id="local price"><i>XX $</i></h6> 
+                  <h6 id="local price"><i> 10$ per session</i></h6> 
                 </div>
               </div>
             </div>  
-            <a href="#" class="btn btn-primary other-service-btn">Purchase</a>  
+            <button class="btn btn-primary other-service-btn" data-toggle="modal" data-target="#purchase_modal">Purchase</button> 
           </div>
 
           <div class="col-md-4 d-flex flex-column align-items-center justify-content-center other-service-item">
@@ -157,11 +159,11 @@
               <div class="card-img-overlay sub-card other-service-card">
                 <div class="other-service-text">
                   <h5 class="card-title">Massage</h5>
-                  <h6 id="global price"><i>XX $</i></h6> 
+                  <h6 id="global price"><i> 15$ per session</i></h6> 
                 </div>
               </div>
             </div>  
-            <a href="#" class="btn btn-primary other-service-btn">Purchase</a>  
+            <button class="btn btn-primary other-service-btn" data-toggle="modal" data-target="#purchase_modal">Purchase</button>
           </div>
             
             
@@ -176,50 +178,36 @@
 
         <!--Log In Modal -->
     <div class="modal fade" id="sign_up_modal" tabindex="-1" role="dialog" aria-labelledby="sign_up_modal_Title" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="sign_up_modal_Title">GymSpot</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="sign_up">
-              <p>Don't have an account?</p>
-              <h2>Sign Up</h2>
-              <form class="signin_form">    
-                  <li><label> Username: &nbsp </label> <input type="text" name="username" id="sign_up_username" value="" placeholder="username" /></li>
-                  <li><label> Password: &nbsp </label><input type="password" name="password" id="sign_up_password" value="" placeholder="password" /></li>
-                  <li><label> Repeat password: &nbsp </label><input type="password" name="password" id="sign_up_password_repeat" value="" placeholder="repeat password" /></li>
-                  <li><label> Email: &nbsp </label><input type="email" name="email" id="sign_up_email" value="" placeholder="email" /></li>
-              </form>
-              <button class="btn btn-primary" id="sign_up_button">Sign Up</button>
+      
+    </div>
+
+        <!--Purchase Modal -->
+        <div class="modal fade" id="purchase_modal" tabindex="-1" role="dialog" aria-labelledby="purchase_modal_Title" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="purchase_modal_Title">PLEASE LOG IN TO PURCHASE!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="Purchase d-flex justify-content-center" id="purchase_modal_Body">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close"> OK!</button>
+                </div>
+              </div>
             </div>
-            <div class="sign_in">
-              <p>Already have an account?</p>
-              <h2>Sign In</h2>
-              <form class="signin_form">
-                  <li><label> Username: &nbsp </label><input type="text" name="username" id="sign_in_username" value="" placeholder="username" /></li>
-                  <li><label> Password: &nbsp </label><input type="password" name="password" id="sign_in_password" value="" placeholder="password" /></li>
-              </form>
-              <button class="btn btn-primary" id="sign_in_button">Sign In</button>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
-      </div>
-    </div>
 
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="programs.js"></script>
+    <script src="project.js"></script>
+    <script src="services.js"></script>
   </body>
 
  
