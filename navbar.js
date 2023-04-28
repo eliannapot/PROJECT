@@ -11,8 +11,11 @@ navbar.innerHTML = `<a class="navbar-brand" href="index.html">GymSpot</a>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="programs.html">Programs <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Admin </a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
