@@ -39,27 +39,27 @@
   --secondcolor: hsl(var(--hue), 72%, 45%);
 }
 
-/* body{
-  /*margin: var(--header-height) 0 0 0;*
+body{
+  margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*
-} */
+  transition: .4s; /*For animation dark mode*/
+}
 
-/*
-.body-dark-theme {
+
+.dark-theme {
   --hue: 200;
   --firstcolor: hsl(var(--hue), 91%, 34%);
   --secondcolor: hsl(var(--hue), 91%, 20%);
-}*/
+}
 
-/* body.dark-theme{
+ .dark-theme{
   --first-color-dark: hsl(var(--hue), 8%, 20%);
   --title-color: hsl(var(--hue), 4%, 95%);
   --text-color: hsl(var(--hue), 4%, 75%);
   --body-color: hsl(var(--hue), 8%, 12%);
   --container-color: hsl(var(--hue), 8%, 16%);
-} */
+} 
 
 /*-------------Footer----------------*/
 .footer-class {

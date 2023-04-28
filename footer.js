@@ -52,7 +52,7 @@ container.appendChild(row1)
             p1.textContent="Weekdays: I don't know man I am stressed"
         col3.appendChild(p1)
             p2=document.createElement('p')
-            p2.textContent="Weekends: 22:00-6:00 after a bittle of wine or two"
+            p2.textContent="Weekends: 22:00-6:00 after a bottle of wine or two"
         col3.appendChild(p2)
     copyright=document.createElement('div')
     copyright.className = 'text-center p-3 copyright-class'

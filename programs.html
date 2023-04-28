@@ -20,32 +20,7 @@
    <body>
 
      <!---Navigation Bar--->
-     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">GymSpot</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="programs.html">Programs <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <button class="change-theme nav-button" id="theme-button">Night Mode</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-button" data-toggle="modal" data-target="#sign_up_modal" id="Log-in">Log in</button>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="navBar">
     </nav>
 
     <!---Programs--->
@@ -53,7 +28,7 @@
       <div class="container"> <h2>Programs</h2>
         <div class="row justify-content-center">
 
-        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
+        <div class="Crossfit col-md-4 d-flex flex-column align-items-center justify-content-center">      
                   <div class="wrap-hover">
                       <div class="side-a">
                           <h2>Crossfit</h2>   
@@ -68,7 +43,7 @@
                   </div>
         </div>
 
-        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
+        <div class="Kick-boxing col-md-4 d-flex flex-column align-items-center justify-content-center">      
           <div class="wrap-hover">
               <div class="side-a">
                   <h2>Kick-boxing</h2>   
@@ -83,7 +58,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
+        <div class="Pilates col-md-4 d-flex flex-column align-items-center justify-content-center">      
           <div class="wrap-hover">
               <div class="side-a">
                   <h2>Pilates</h2>   
@@ -91,14 +66,14 @@
               <div class="side-b">
                   <h4>
                     Low-impact workout that focuses on core strength, flexibility, and balance. Improve posture and tone muscles. 
-                    <br><br>Difficulty: Beginner-Intermediate.
+                    <br><br>Difficulty: Beginner.
                     <br>Time Demand: 60' per session                        
                   </h4>
               </div>
           </div>
         </div>
 
-        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
+        <div class="TRX col-md-4 d-flex flex-column align-items-center justify-content-center">      
           <div class="wrap-hover">
               <div class="side-a">
                   <h2>TRX</h2>   
@@ -109,11 +84,12 @@
                     <br><br>Difficulty: Intermediate
                     <br>Time Demand: 60' per session                        
                   </h4>
+                  <button data-toggle="modal" data-target="#sign_up_modal" id="signUpGlobal" class="btn btn-primary">Sign up</button>
               </div>
           </div>
         </div>
 
-        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">      
+        <div class="Zumba col-md-4 d-flex flex-column align-items-center justify-content-center">      
           <div class="wrap-hover">
               <div class="side-a">
                   <h2>Zumba</h2>   
@@ -138,6 +114,7 @@
     </div>
    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="navbar.js"></script>
     <script src="modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
