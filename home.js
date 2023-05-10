@@ -27,5 +27,6 @@ function weekly_streak(x){
         weekly_streak.innerHTML = "Please Log in to see your weekly streak";
     }
 }
+
 let log_in_state = false;
 log_in_state = log_in(log_in_state);
