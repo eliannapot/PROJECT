@@ -297,6 +297,12 @@ div.wrap-hover {
 .modal-body h2{
   padding: 0;
 }
+
+.modal-body {
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
 .modal-footer button{
   background-color: var(--secondcolor);
   color: white;
