@@ -1,5 +1,5 @@
-modal=document.getElementById("sign_up_modal");
-modal.innerHTML = `<div class="modal-dialog modal-dialog-centered" role="document">
+modal1=document.getElementById("sign_up_modal");
+modal1.innerHTML = `<div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="sign_up_modal_Title">GymSpot</h5>
@@ -32,11 +32,13 @@ modal.innerHTML = `<div class="modal-dialog modal-dialog-centered" role="documen
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary closing" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn closing btn-primary">Save changes</button> 
                       </div>
                     </div>
                     </div>`;
+//the button that have 'closing' in their class automatically close the modal when pressed.
+
 
 const username = document.getElementById('sign_up_username');
 const email = document.getElementById('sign_up_email');
@@ -117,4 +119,22 @@ function validateInput(inputElement, regex) {
   }
 }
  
-//hi this is a change
+modal2=document.getElementById("logged_out_modal");
+modal2.innerHTML = `<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="logged_out_modal_Title">GymSpot</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="sign_up">
+      <p>Successfully logged out!</p>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary closing" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>`;

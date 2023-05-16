@@ -23,7 +23,7 @@ navbar.innerHTML = `<a class="navbar-brand" href="index.html">GymSpot</a>
                         <button class="change-theme nav-button" id="theme-button">Night Mode</button>
                         </li>
                         <li class="nav-item">
-                        <button class="nav-button" data-toggle="modal" data-target="#sign_up_modal" id="Log-in">Log in</button>
+                        <button class="nav-button" id="Log-in">Log in</button>
                         </li>
                     </ul>
                     </div>`
