@@ -63,7 +63,6 @@ function changeSignUp(x){ //function that changes the text of the sign up button
 }
 
 function changePurchaseModal(x){ //function that changes the text of the purchase modal
-    let purchaseModal = document.getElementById("purchase-modal");
     let purchase_modal_Title = document.getElementById("purchase_modal_Title");
     let purchase_modal_Body = document.getElementById("purchase_modal_Body");
     if (x == true){
